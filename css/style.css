@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 15px Arial;
+}
+
+.wrap {
+  box-sizing: border-box;
+  width: 1060px;
+  height: 950px;
+  margin: 0 auto;
+  padding: 50px 0 0 46px;
+  -webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
+  box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
+}
+
+.menu {
+  width: 967px;
+  margin: 35px 0 27px 1px;
+  padding: 0;
+  list-style: none;
+  background: linear-gradient(to top, #464545, #5D5D5D);
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  margin: 0 -5px 0 0;
+  padding: 12px 0 0 0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu li:first-child a {
+  width: 145px;
+  text-align: left;
+  padding-left: 24px;
+}
+
+.menu a.active {
+  width: 101px;
+  margin: 0 -5px 0 0;
+  background: linear-gradient(to top, #2F2F2F, #494949);
+  border-right: 1px solid #838383;
+  border-left: 1px solid #838383;
+}
+
+.menu li:nth-child(3) a {
+  width: 171px;
+}
+
+.menu li:last-child a {
+  width: 111px;
+}
+
+.left-menu {
+  float: left;
+  width: 239px;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  border: 1px solid #C8C8C8;
+}
+
+.left-menu li {
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.left-menu li:last-child {
+  border: none;
+}
+
+.left-menu a {
+  box-sizing: border-box;
+  display: block;
+  width: 239px;
+  height: 39px;
+  padding: 11px 0 0 23px;
+  color: #666;
+  text-decoration: none;
+}
+
+.left-menu a.active {
+  padding-left: 35px;
+  background: #F9F9F9;
+  color: #000;
+}
+
+main .img {
+  display: inline-block;
+  width: 676px;
+  margin: 13px 0 0 48px;
+  border: 1px solid #C8C8C8;
+}
+
+main .img img {
+  margin: 47px 88px 40px;
+}
+
+main p {
+  width: 650px;
+  margin: 37px 315px 70px;
+  color: #666;
+}
+
+.sitemap {
+  width: 967px;
+  padding: 0;
+  list-style: none;
+  background: #E1E1E1;
+  font-size: 13px;
+}
+
+.sitemap li {
+  display: inline-block;
+  color: #666;
+}
+
+.sitemap li:last-child {
+  margin-left: 207px;
+}
+
+.sitemap a {
+  box-sizing: border-box;
+  display: block;
+  width: 140px;
+  height: 40px;
+  padding: 12px 0 0 25px;
+  text-decoration: none;
+  color: #666;
+}
+
+.sitemap a.active {
+  text-decoration: underline;
+}
