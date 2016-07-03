@@ -1,13 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  font: 15px Arial;
+  font-family: Arial, sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .wrap {
   box-sizing: border-box;
   width: 1060px;
-  height: 950px;
   margin: 0 auto;
   padding: 50px 0 0 46px;
   -webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
@@ -25,39 +30,28 @@ body {
 
 .menu li {
   display: inline-block;
+  width: 150px;
+  margin: 0 -5px 0 0;
 }
 
 .menu a {
   box-sizing: border-box;
   display: block;
   height: 40px;
-  margin: 0 -5px 0 0;
   padding: 12px 0 0 0;
   color: #fff;
   text-align: center;
   text-decoration: none;
 }
 
-.menu li:first-child a {
-  width: 145px;
-  text-align: left;
-  padding-left: 24px;
-}
-
-.menu a.active {
-  width: 101px;
-  margin: 0 -5px 0 0;
+.menu a:hover {
   background: linear-gradient(to top, #2F2F2F, #494949);
   border-right: 1px solid #838383;
   border-left: 1px solid #838383;
 }
 
-.menu li:nth-child(3) a {
-  width: 171px;
-}
-
-.menu li:last-child a {
-  width: 111px;
+main {
+  width: 967px;
 }
 
 .left-menu {
@@ -87,31 +81,41 @@ body {
   text-decoration: none;
 }
 
-.left-menu a.active {
+.left-menu a:hover {
   padding-left: 35px;
   background: #F9F9F9;
   color: #000;
+  transition: .4s;
 }
 
-main .img {
-  display: inline-block;
-  width: 676px;
-  margin: 13px 0 0 48px;
+.main-photo {
+  float: right;
+  width: 679px;
+  margin: 13px 0;
+}
+
+.main-photo img {
+  padding: 47px 89px 44px;
   border: 1px solid #C8C8C8;
 }
 
-main .img img {
-  margin: 47px 88px 40px;
-}
-
-main p {
-  width: 650px;
-  margin: 37px 315px 70px;
+.main-photo p {
+  margin: 28px 10px 0 15px;
+  font-size: 13px;
+  line-height: 21px;
   color: #666;
 }
 
+footer {
+  padding: 50px 0 35px;
+}
+
 .sitemap {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   width: 967px;
+  margin: 0;
   padding: 0;
   list-style: none;
   background: #E1E1E1;
@@ -119,7 +123,9 @@ main p {
 }
 
 .sitemap li {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  height: 40px;
   color: #666;
 }
 
@@ -128,15 +134,10 @@ main p {
 }
 
 .sitemap a {
-  box-sizing: border-box;
-  display: block;
-  width: 140px;
-  height: 40px;
-  padding: 12px 0 0 25px;
   text-decoration: none;
   color: #666;
 }
 
-.sitemap a.active {
+.sitemap a:hover {
   text-decoration: underline;
 }
